@@ -25,7 +25,7 @@ for (let j = 0; j < spaceStrippedCardNumber.length; j++) {
     const currentCharacter = spaceStrippedCardNumber[j];
     let currentDigit = parseInt(currentCharacter);
     // console.log(currentCharacter)
-    if (currentDigit % 2 == 0) {
+    if (j % 2 == 0) {
         let doubledDigit = (currentDigit * 2).toString();
         let newDigit = 0;
         for (let k = 0; k < doubledDigit.length; k++) {
